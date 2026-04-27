@@ -149,6 +149,14 @@ the Word manuscript builder. It is intentionally smaller so that reviewers and
 readers can inspect the analysis-ready validation logic without local paths or
 runtime cache state.
 
+## Licence
+
+Repository software code is released under the MIT License. Analysis-ready
+research tables released in `data/analysis_ready/`, `data/release_manifest.csv`
+and `data/column_dictionary.csv` are released under CC BY 4.0 unless otherwise
+stated. External public datasets listed in `data/external_sources.md` remain
+under their original licences and terms of use.
+
 ## Citation
 
 If you use this code, cite the associated manuscript and the archived release of

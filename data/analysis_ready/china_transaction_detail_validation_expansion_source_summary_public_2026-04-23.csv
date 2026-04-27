@@ -1,0 +1,4 @@
+source_name,raw_rows,valid_price_rows,window_2018_2022_rows,unique_community_keys,linked_rows,min_year,max_year
+Beijing Beike transaction detail 2025-08,435008,435006,250061,7967,435006,2018,2025
+Shanghai Beike transaction detail 2018-2025,303109,303109,180129,13180,303109,2018,2025
+Jiangsu nb0202 transaction detail 2008-2023,384937,173141,134901,8395,0,2012,2023

@@ -1,0 +1,15 @@
+audit_domain,test,value,status,interpretation
+China transaction sources,raw transaction-detail scale,1123054,pass,Large local transaction-detail corpus; not a small hand-filled sample.
+China transaction sources,2018-2022 aligned rows,565091,pass,Main validation window aligns to the pathway-law period.
+China transaction sources,sources with public deal URLs,2/3 sources; 738115 linked rows,boundary,Beijing/Shanghai have row-level URLs; Jiangsu expands coverage but lacks URLs.
+China city coverage,mean 2018-2022 community match coverage,0.94232,pass,Coverage is high enough for city-level external rank validation.
+China city coverage,minimum city rank gap,0.506649,pass,All transaction-detail cities retain a positive never-minus-persistent external rank gap.
+China coverage bias,mean persistent-minus-never coverage bias,0.029001,pass,Persistent-bottom communities are not disadvantaged by transaction matching coverage.
+China matched pairs,external sign concordance,43/43,pass,Every ready matched pair keeps persistent-bottom below the matched control.
+China matched pairs,strict-only external sign concordance,42/42,pass,Result survives without relying on fallback city-community matching.
+China matched pairs,minimum external pair gap,1.066125,pass,The weakest ready pair is still directionally positive.
+UK HM Land Registry,all-available minimal-law holdout win share,0.845455,pass,UK transaction city-frame replication prefers minimal law over null alternatives.
+UK HM Land Registry,exposure-only holdout win share,0.0,pass,Exposure-only null does not win UK holdout splits.
+UK HM Land Registry,top10 power-screened minimal-law holdout win share,0.866667,pass,UK result survives a power-screened robustness frame.
+Claim boundary,China source framing,enterprise transaction-detail validation,boundary,Describe the China evidence as enterprise transaction-detail validation from Lianjia/Beike-aligned records.
+Claim boundary,UK source framing,12-city transaction frame,boundary,Keep the UK claim at the 12-city transaction-frame level.

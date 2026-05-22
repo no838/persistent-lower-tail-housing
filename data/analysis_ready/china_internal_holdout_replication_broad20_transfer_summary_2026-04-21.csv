@@ -1,0 +1,2 @@
+n_cities,holdout_size,n_splits,discovery_minimal_win_share,holdout_minimal_win_share,same_winner_share,discovery_minimal_and_holdout_minimal_share,discovery_minimal_but_holdout_timing_share,discovery_minimal_but_holdout_exposure_share
+20,4,4845,0.9950464396284829,0.7283797729618163,0.7234262125902993,0.7234262125902993,0.27162022703818367,0.0

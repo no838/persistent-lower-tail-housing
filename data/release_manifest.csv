@@ -1,4 +1,13 @@
 filename,rows,columns,role
+broad20_city_pathway_law_table_2018_2022.csv,20,31,broad 20-city internal robustness table
+china_early_window_forecast_city_detail_v13_2026-05-14.csv,100,25,v13 temporal anti-identity forecast table
+china_early_window_forecast_performance_v13_2026-05-14.csv,30,16,v13 temporal anti-identity forecast table
+china_early_window_forecast_permutation_null_v13_2026-05-14.csv,1000,7,v13 temporal anti-identity forecast table
+china_internal_holdout_replication_broad20_model_summary_2026-04-21.csv,3,11,broad 20-city internal robustness table
+china_internal_holdout_replication_broad20_split_table_2026-04-21.csv,14535,15,broad 20-city internal robustness table
+china_internal_holdout_replication_broad20_transfer_summary_2026-04-21.csv,1,9,broad 20-city internal robustness table
+china_rolling_origin_forecast_city_window_detail_v13_2026-05-14.csv,116,26,v13 temporal anti-identity forecast table
+china_rolling_origin_forecast_performance_v13_2026-05-14.csv,12,15,v13 temporal anti-identity forecast table
 china_transaction_detail_validation_expansion_city_summary_2026-04-23.csv,6,19,analysis-ready table used by public reproduction scripts
 china_transaction_detail_validation_expansion_pair_scores_2026-04-23.csv,45,17,analysis-ready table used by public reproduction scripts
 china_transaction_detail_validation_expansion_panel_2026-04-23.csv,28608,21,analysis-ready table used by public reproduction scripts
@@ -8,10 +17,17 @@ community_transition_process_2018_2022.csv,1651,15,analysis-ready table used by 
 component_attribution_board_2026-04-23.csv,11,13,analysis-ready table used by public reproduction scripts
 france_dvf_department_pathway_smoke_city_table_2021_2025.csv,93,19,analysis-ready table used by public reproduction scripts
 france_dvf_department_pathway_smoke_model_summary_2021_2025.csv,2,7,analysis-ready table used by public reproduction scripts
+pathway_components_uncertainty_v13_1_2026-05-14.csv,42,14,v13.1 component uncertainty table
+pathway_forecast_city_jackknife_v13_1_2026-05-14.csv,147,34,v13.1 leave-one-city forecast jackknife table
+threshold_policy_and_sensitivity_v13_1_2026-05-14.csv,28,12,v13.1 threshold policy and sensitivity table
 transaction_validation_audit_board_2026-04-23.csv,14,5,analysis-ready table used by public reproduction scripts
 transaction_validation_audit_city_detail_2026-04-23.csv,6,25,analysis-ready table used by public reproduction scripts
 transaction_validation_audit_pair_detail_2026-04-23.csv,45,14,analysis-ready table used by public reproduction scripts
 uk_all_available12_holdout_split_table_2026-04-23.csv,660,9,analysis-ready table used by public reproduction scripts
 uk_all_available12_holdout_transfer_summary_2026-04-23.csv,3,9,analysis-ready table used by public reproduction scripts
+uk_cityframe_panel_coverage_2018_2022.csv,3,7,analysis-ready table used by public reproduction scripts
+uk_cityframe_pathway_metrics_2018_2022.csv,574,26,analysis-ready table used by public reproduction scripts
+uk_cityframe_performance_summary_2018_2022.csv,6,12,analysis-ready table used by public reproduction scripts
+uk_old_vs_cityframe_performance_comparison_2018_2022.csv,8,13,analysis-ready table used by public reproduction scripts
 uk_top10_holdout_transfer_summary_2026-04-23.csv,3,9,analysis-ready table used by public reproduction scripts
 universal_pathway_law_city_table_2026-04-20.csv,12,22,analysis-ready table used by public reproduction scripts

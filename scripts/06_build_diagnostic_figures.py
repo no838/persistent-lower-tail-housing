@@ -18,6 +18,7 @@ from utils import data_file, f, get, group_by, read_csv, truthy
 CITY_TABLE = "universal_pathway_law_city_table_2026-04-20.csv"
 PAIR_SCORES = "china_transaction_detail_validation_expansion_pair_scores_2026-04-23.csv"
 UK_SPLITS = "uk_all_available12_holdout_split_table_2026-04-23.csv"
+UK_CITYFRAME_PERFORMANCE = "uk_cityframe_performance_summary_2018_2022.csv"
 FRANCE_TABLE = "france_dvf_department_pathway_smoke_city_table_2021_2025.csv"
 
 
@@ -110,6 +111,35 @@ def uk_holdout_distribution(data_dir: Path, fig_dir: Path) -> None:
     plt.close(fig)
 
 
+def uk_cityframe_performance(data_dir: Path, fig_dir: Path) -> None:
+    plt = import_pyplot()
+    path = data_file(data_dir, UK_CITYFRAME_PERFORMANCE)
+    if not path.exists():
+        return
+    rows = read_csv(path)
+    rows = [row for row in rows if row.get("cohort_type") == "available"]
+    order = ["ttwa", "lad", "bua"]
+    rows_by_frame = {row.get("frame_type", ""): row for row in rows}
+    pathway = [f(rows_by_frame.get(frame, {}).get("mae_pathway")) for frame in order]
+    exposure = [f(rows_by_frame.get(frame, {}).get("mae_exposure_only")) for frame in order]
+    if any(value is None for value in pathway + exposure):
+        return
+
+    fig, ax = plt.subplots(figsize=(5.8, 4.0))
+    x = list(range(len(order)))
+    width = 0.34
+    ax.bar([i - width / 2 for i in x], pathway, width, color="#4F7E9F", alpha=0.82, label="Pathway")
+    ax.bar([i + width / 2 for i in x], exposure, width, color="#B8B8B8", alpha=0.75, label="Exposure-only")
+    ax.set_xticks(x, ["TTWA", "LAD", "BUA"])
+    ax.set_ylabel("Mean absolute error")
+    ax.set_title("UK ONSPD-linked city-frame performance")
+    ax.legend(frameon=False)
+    ax.grid(axis="y", color="#D9D9D9", lw=0.5, alpha=0.35)
+    fig.tight_layout()
+    fig.savefig(fig_dir / "diagnostic_uk_cityframe_performance.png", dpi=300)
+    plt.close(fig)
+
+
 def france_calibration(data_dir: Path, fig_dir: Path) -> None:
     plt = import_pyplot()
     rows = read_csv(data_file(data_dir, FRANCE_TABLE))
@@ -144,6 +174,7 @@ def main() -> int:
     pathway_calibration(args.data_dir, args.fig_dir)
     transaction_pairs(args.data_dir, args.fig_dir)
     uk_holdout_distribution(args.data_dir, args.fig_dir)
+    uk_cityframe_performance(args.data_dir, args.fig_dir)
     france_calibration(args.data_dir, args.fig_dir)
     print(f"Wrote diagnostic figures to {args.fig_dir}")
     return 0

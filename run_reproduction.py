@@ -15,6 +15,10 @@ TABLE_SCRIPTS = [
     "03_reproduce_uk_holdout.py",
     "04_reproduce_france_extension.py",
     "05_reproduce_component_attribution.py",
+    "07_reproduce_uk_cityframe.py",
+    "08_reproduce_temporal_forecast.py",
+    "09_reproduce_uncertainty_threshold_policy.py",
+    "10_reproduce_china_broad20_robustness.py",
 ]
 
 

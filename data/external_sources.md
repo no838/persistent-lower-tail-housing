@@ -12,8 +12,20 @@ HM Land Registry Price Paid Data.
 - Official collection: https://www.gov.uk/government/collections/price-paid-data
 - Download page: https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads
 
-The manuscript uses HM Land Registry price-paid records as the public UK
-transaction source for city-frame holdout replication.
+The manuscript uses HM Land Registry price-paid records as the public
+England-Wales transaction source for the older UK holdout diagnostic and the
+ONSPD-linked city-frame replication.
+
+## UK postcode geography
+
+ONS Postcode Directory (February 2026) for the UK (Hosted Table), Office for
+National Statistics.
+
+- Official data.gov.uk page: https://www.data.gov.uk/dataset/36cf66a7-d570-4ee6-8ea0-f2e241d8b536/ons-postcode-directory-february-2026-for-the-uk-hosted-table
+
+The manuscript uses the hosted-table postcode geography to link full postcodes
+to LAD, TTWA and BUA frames. The release includes only derived frame-level
+analysis tables, not the full postcode lookup.
 
 ## France DVF transaction records
 
@@ -53,4 +65,3 @@ ChinaUV++ urban-village, roof and population products.
 The manuscript uses the urban-village polygons, roof layer and population raster
 as settlement-morphology sidecars. The repository includes only derived
 manuscript-level summaries, not the full geospatial source products.
-

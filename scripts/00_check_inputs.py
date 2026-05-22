@@ -193,6 +193,40 @@ EXPECTED: dict[str, list[str]] = {
         "mae_ci_low",
         "mae_ci_high",
     ],
+    "pathway_law_horizon_sweep_v13_4_2026-05-14_performance.csv": [
+        "cutoff_q",
+        "horizon_years",
+        "target_mode",
+        "predictor",
+        "mae",
+        "mae_minus_markov_stationary",
+    ],
+    "pathway_law_horizon_sweep_v13_4_2026-05-14_collapse.csv": [
+        "cutoff_q",
+        "horizon_years",
+        "target_mode",
+        "kernel_vs_target_after_exposure_pearson",
+        "kernel_vs_target_after_exposure_mae",
+    ],
+    "pathway_law_evidence_matrix_v13_4_2026-05-14.csv": [
+        "evidence_dimension",
+        "target",
+        "horizon_years",
+        "pathway_mae",
+        "interpretation",
+    ],
+    "pathway_law_horizon_sweep_v13_4_2026-05-14_city_window.csv": [
+        "cutoff_q",
+        "horizon_years",
+        "train_years",
+        "holdout_years",
+    ],
+    "pathway_law_horizon_sweep_v13_4_2026-05-14_city_window_long.csv": [
+        "cutoff_q",
+        "horizon_years",
+        "train_years",
+        "holdout_years",
+    ],
 }
 
 

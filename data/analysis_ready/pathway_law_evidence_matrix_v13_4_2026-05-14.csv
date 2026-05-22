@@ -1,0 +1,16 @@
+evidence_dimension,target,horizon_years,pathway_mae,markov_mae,exposure_only_mae,pathway_mae_reduction_vs_exposure_only,interpretation
+horizon-dependent predictive boundary,majority_holdout_years,1,0.021502509338551,0.0,0.060458949087821,0.6443453010187616,"Degenerate one-year target; calibration anchor, not law evidence."
+horizon-dependent predictive boundary,majority_holdout_years,2,0.0146316275212069,0.012317999034466,0.0934870706591362,0.8434903626988659,Markov better; short-horizon state retention is expected to dominate.
+horizon-dependent predictive boundary,majority_holdout_years,3,0.0155084872024387,0.0086384914170918,0.0634109488727299,0.7554288734337458,Markov better; short-horizon state retention is expected to dominate.
+horizon-dependent predictive boundary,majority_holdout_years,4,0.0100973142129623,0.0215887143394502,0.0854944826225194,0.8818951363499725,Pathway beats Markov; longer-horizon hardening dominates one-step retention.
+horizon-dependent predictive boundary,majority_holdout_years,5,0.0140153977280815,0.0187760318900116,0.075610829381268,0.8146376935318513,Pathway beats Markov; longer-horizon hardening dominates one-step retention.
+strict-persistence boundary,all_holdout_years,1,0.021502509338551,0.0,0.060458949087821,0.6443453010187616,"Degenerate one-year target; calibration anchor, not law evidence."
+strict-persistence boundary,all_holdout_years,2,0.0146316275212069,0.012317999034466,0.0934870706591362,0.8434903626988659,Markov slightly better; strict all-year target is rare and sensitive to base rate.
+strict-persistence boundary,all_holdout_years,3,0.0191951894767766,0.0195279080936624,0.0964480374263986,0.800978952097135,Pathway matches or beats Markov for strict persistence.
+strict-persistence boundary,all_holdout_years,4,0.0241335718077088,0.0274898507722146,0.1078176998177637,0.776163173129273,Pathway matches or beats Markov for strict persistence.
+strict-persistence boundary,all_holdout_years,5,0.0296333194561354,0.0314715341551491,0.117883087237652,0.7486211113864476,Pathway matches or beats Markov for strict persistence.
+hardening-kernel collapse,target_over_exposure_vs_kernel,1,0.1224356926654345,,,,"Pearson collapse=0.975, slope=0.665; this tests scaling, not forecast rank."
+hardening-kernel collapse,target_over_exposure_vs_kernel,2,0.0857473010988422,,,,"Pearson collapse=0.837, slope=0.985; this tests scaling, not forecast rank."
+hardening-kernel collapse,target_over_exposure_vs_kernel,3,0.0922018068603615,,,,"Pearson collapse=0.868, slope=0.753; this tests scaling, not forecast rank."
+hardening-kernel collapse,target_over_exposure_vs_kernel,4,0.0580976937385264,,,,"Pearson collapse=0.856, slope=0.938; this tests scaling, not forecast rank."
+hardening-kernel collapse,target_over_exposure_vs_kernel,5,0.0786180339594108,,,,"Pearson collapse=0.887, slope=0.766; this tests scaling, not forecast rank."

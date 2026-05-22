@@ -31,3 +31,8 @@ uk_cityframe_performance_summary_2018_2022.csv,6,12,analysis-ready table used by
 uk_old_vs_cityframe_performance_comparison_2018_2022.csv,8,13,analysis-ready table used by public reproduction scripts
 uk_top10_holdout_transfer_summary_2026-04-23.csv,3,9,analysis-ready table used by public reproduction scripts
 universal_pathway_law_city_table_2026-04-20.csv,12,22,analysis-ready table used by public reproduction scripts
+pathway_law_horizon_sweep_v13_4_2026-05-14_performance.csv,60,18,v13.4 horizon-sweep forecast-boundary table
+pathway_law_horizon_sweep_v13_4_2026-05-14_collapse.csv,10,9,v13.4 hardening-kernel collapse table
+pathway_law_evidence_matrix_v13_4_2026-05-14.csv,15,8,v13.4 evidence-boundary matrix
+pathway_law_horizon_sweep_v13_4_2026-05-14_city_window.csv,226,36,v13.4 city-window horizon-sweep detail table
+pathway_law_horizon_sweep_v13_4_2026-05-14_city_window_long.csv,452,41,v13.4 long city-window horizon-sweep detail table

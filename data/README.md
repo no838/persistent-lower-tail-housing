@@ -45,3 +45,8 @@ data/external_sources.md
   `threshold_policy_and_sensitivity_v13_1_2026-05-14.csv` record the v13.1
   component-uncertainty, leave-one-city and threshold-policy checks used in the
   manuscript Methods and robustness boundary.
+- `pathway_law_horizon_sweep_v13_4_2026-05-14_*` and
+  `pathway_law_evidence_matrix_v13_4_2026-05-14.csv` record the v13.4
+  horizon-sweep boundary checks. They show where Markov retention is the
+  stronger short-horizon forecast benchmark and where the pathway expression
+  becomes stronger as a longer-horizon hardening account.

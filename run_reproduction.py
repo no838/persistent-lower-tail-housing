@@ -19,6 +19,7 @@ TABLE_SCRIPTS = [
     "08_reproduce_temporal_forecast.py",
     "09_reproduce_uncertainty_threshold_policy.py",
     "10_reproduce_china_broad20_robustness.py",
+    "11_reproduce_horizon_sweep_v13_4.py",
 ]
 
 

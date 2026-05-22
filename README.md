@@ -2,7 +2,7 @@
 
 This repository contains the public reproduction code for the manuscript:
 
-> From transient lower-tail price exposure to persistent housing disadvantage
+> How lower-tail exposure becomes persistent housing disadvantage
 
 The code is designed to reproduce manuscript-level validation results from
 analysis-ready research tables. It does not depend on local project paths,
@@ -25,11 +25,14 @@ where:
 - `1 - λ` is immediate non-escape.
 - `δ` is deepening conditional on repeat exposure.
 
-The v13.1 manuscript treats this expression as process accounting rather than as
+The v13.5 manuscript treats this expression as process accounting rather than as
 a universally dominant forecast law. Temporal forecast checks with future years
 withheld show that the expression is not merely an in-window identity, but a
 Markov-pair retention kernel is the stricter short-horizon benchmark for
-two-year repeat lower-tail forecasts.
+two-year repeat lower-tail forecasts. A later horizon sweep keeps this boundary
+explicit: Markov is sharper at two- and three-year majority-persistence horizons,
+whereas the pathway expression overtakes Markov at four- and five-year horizons
+and preserves exposure-normalized hardening-kernel collapse.
 
 The scripts reproduce manuscript-facing validation layers:
 
@@ -42,6 +45,7 @@ The scripts reproduce manuscript-facing validation layers:
   canonical 12-city calibration frame.
 - v13 temporal anti-identity forecast checks.
 - v13.1 threshold-policy, component-uncertainty and leave-one-city summaries.
+- v13.4 horizon-sweep boundary checks.
 
 ## Repository layout
 
@@ -65,6 +69,7 @@ persistent_lower_tail_housing_reproducibility/
     08_reproduce_temporal_forecast.py
     09_reproduce_uncertainty_threshold_policy.py
     10_reproduce_china_broad20_robustness.py
+    11_reproduce_horizon_sweep_v13_4.py
     utils.py
   outputs/
     tables/
@@ -112,6 +117,11 @@ china_rolling_origin_forecast_performance_v13_2026-05-14.csv
 pathway_components_uncertainty_v13_1_2026-05-14.csv
 pathway_forecast_city_jackknife_v13_1_2026-05-14.csv
 threshold_policy_and_sensitivity_v13_1_2026-05-14.csv
+pathway_law_horizon_sweep_v13_4_2026-05-14_performance.csv
+pathway_law_horizon_sweep_v13_4_2026-05-14_collapse.csv
+pathway_law_evidence_matrix_v13_4_2026-05-14.csv
+pathway_law_horizon_sweep_v13_4_2026-05-14_city_window.csv
+pathway_law_horizon_sweep_v13_4_2026-05-14_city_window_long.csv
 ```
 
 Additional public-release metadata are provided in:
@@ -188,6 +198,10 @@ The released tables should reproduce the manuscript-level results, including:
   pathway-over-exposure ordering in every main run; China bottom decile is the
   discovery definition while England-Wales and France are bottom-`20%`
   frame-relative extensions.
+- v13.4 horizon-sweep checks: Markov retention remains better at two- and
+  three-year majority-persistence horizons, while the pathway expression beats
+  Markov at four- and five-year horizons and the hardening-kernel collapse
+  remains strong after exposure normalization.
 
 Small differences in printed rounding are expected.
 
